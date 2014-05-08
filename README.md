@@ -1,16 +1,28 @@
 
-
-Download virtualbox and install it: https://www.virtualbox.org/wiki/Downloads
+Download VirtualBox and install it: https://www.virtualbox.org/wiki/Downloads or use another virtualisation platform of your choice if
+you already have a preferred one.
 
 Download the latest image (supplied as a split zipfile in parts, you need all the parts): https://github.com/Paul-Bradley/EasyNode/releases
 
-Unzip the image (including the folder) to the My Documents\VirtualBox VMs\ folder, so you have My Documents\VirtualBox VMs\P2Pool node\
+NOTE: For release 0.1 initially a set of zips containing VirtualBox files was uploaded. I've now also added an OVA (Open Virtualisation Platform)
+image packed into split zips, so it's easy to import this into VirtualBox, VMWare, HyperV or most other virtualisation platforms.
 
-The image size is about 7GB as shipped, but will grow over time as the blockchains get bigger, it is set to a maximum 
-size of 60GB and will grow dynamically to accomodate the extra data.
+
+IF USING THE VIRTUALBOX FILES:
+
+Unzip the image (including the folder) to the My Documents\VirtualBox VMs\ folder, so you have My Documents\VirtualBox VMs\P2Pool node\
 
 Run virtualbox, and select "Add" from the "Machine" menu, browse to the unzipped files and select the "P2Pool node.vbox" file,
 this will add the VM to your inventory and you can now select it and click "Start" to boot it.
+
+
+
+IF USING THE OVA FILE:
+
+Unzip the .ova file somewhere convenient then import it into your virtualisation software.
+
+The image size is about 7GB as shipped, but will grow over time as the blockchains get bigger, it is set to a maximum 
+size of 60GB and will grow dynamically to accomodate the extra data.
 
 The image is set up with user p2pool (automatically logs in on boot) and password p2pool (this is the sudo password)
 
