@@ -49,29 +49,18 @@ If a wallet update is required, open a terminal and do the following:
 
 Vertcoin:
 
-cd ~/vertcoin/src
-git pull
-make -f makefile.unix
-sudo cp ./vertcoind /usr/local/bin
-sudo /etc/init.d/vertcoind stop
-sudo /etc/init.d/vertcoind start
+cd ~/vertcoin/src; git pull; make -f makefile.unix; sudo cp ./vertcoind /usr/local/bin; sudo /etc/init.d/vertcoind stop; sudo /etc/init.d/vertcoind start
 
 Monocle:
 
-cd ~/monocle/
-git pull
-qmake
-make
-sudo cp ./monocle-qt /usr/local/bin
+cd ~/monocle/; git pull; qmake; make; sudo cp ./monocle-qt /usr/local/bin
+
 Close the Monocle wallet, and re-open it using the link on the desktop
 
 Parallaxcoin:
 
-cd ~/parallaxcoin/
-git pull
-qmake
-make
-sudo cp ./parallaxcoin-qt /usr/local/bin
+cd ~/parallaxcoin/; git pull; qmake; make; sudo cp ./parallaxcoin-qt /usr/local/bin
+
 Close the Parallaxcoin wallet, and re-open it using the link on the desktop
 
 
