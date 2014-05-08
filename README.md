@@ -5,7 +5,16 @@ you already have a preferred one.
 Download the latest image (supplied as a split zipfile in parts, you need all the parts): https://github.com/Paul-Bradley/EasyNode/releases
 
 NOTE: For release 0.1 initially a set of zips containing VirtualBox files was uploaded. I've now also added an OVA (Open Virtualisation Platform)
-image packed into split zips, so it's easy to import this into VirtualBox, VMWare, HyperV or most other virtualisation platforms.
+image packed into split zips, so it's easy to import this into VirtualBox, VMWare, HyperV or most other virtualisation platforms. You don't need
+both sets of files, just one.
+
+NOTE2: Especially if using the OVA format (but possibly also with the VirtualBox files, I haven't tested it on a fresh machine) you may find your
+miner cannot connect (and you can't browse) to 127.0.0.1:9171 (p2pool). If this happens it's likely because the port forwarding set up when I
+made the image isn't configured on your virtualisation software. For a guide to configuring port forwarding in VirtualBox or other virtualisation
+software see http://www.howtogeek.com/122641/how-to-forward-ports-to-a-virtual-machine-and-use-it-as-a-server/ - you will need to forward
+the appropriate port (9171 by default, but 9172/9174 if you reconfigure the image for p2pool networks 2 or 3) in your virtualisation software
+so that the host (your computer) forwards traffic received on that port to the guest (the p2pool node VM), then you'll connect your miner or
+browser to localhost (127.0.0.1) on the host but that traffic will be forwarded to p2pool running on the guest.
 
 
 IF USING THE VIRTUALBOX FILES:
