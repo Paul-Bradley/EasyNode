@@ -49,6 +49,15 @@ Please note that especially the first time you start the VM, it may take some ti
 since the blockchains of the wallets will need to be up to date (blockchains are downloaded and included in the image,
 but only up to the date of the last release obviously), so be patient and allow it time to sync.
 
+You can check that p2pool is listening (which it will start doing once the blockchains are fully sync'd) by doing
+"netstat -l -v -n | grep 9171" in a terminal window - if it's listening, you'll get output like:
+
+tcp        0      0 127.0.0.1:9171           0.0.0.0:*               LISTEN
+
+If it's not listening (yet) you'll get nothing at all returned for that command. Obviously if you've reconfigured for
+p2pool networks 2 or 3 as described later in this README, you'll need to grep for 9172 or 9174 instead (the ports for
+p2pool2 and p2pool3 respectively)
+
 Your VTC is being mined directly to the address you use as username in your miner configuration (for example, an address 
 on your usual VTC desktop wallet) and is paid in the generation transaction for the blocks (ie. it appears as immature in 
 your VTC client, then takes 120 blocks to mature and become available for spending).
