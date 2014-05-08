@@ -16,6 +16,12 @@ the appropriate port (9171 by default, but 9172/9174 if you reconfigure the imag
 so that the host (your computer) forwards traffic received on that port to the guest (the p2pool node VM), then you'll connect your miner or
 browser to localhost (127.0.0.1) on the host but that traffic will be forwarded to p2pool running on the guest.
 
+Please consider adding port forwarding for TCP ports 5889, 6889 and 7818 in the virtualisation software 
+(see http://www.howtogeek.com/122641/how-to-forward-ports-to-a-virtual-machine-and-use-it-as-a-server/) and in your router so that you are accepting 
+incoming connections to the node from the internet on these ports. They are the blockchain sync ports for Vertcoin, Monocle and Parallaxcoin respectively 
+and by opening them to incoming connections you will not only help the coin networks by running a full node, but will also improve your own mining 
+profitability by being better connected which reduces the risk of orphan blocks.
+
 
 IF USING THE VIRTUALBOX FILES:
 
@@ -115,5 +121,4 @@ NOTE: Do not give a copy of your image to anyone else unless you first remove th
 the .vertcoin, .monocle and .parallaxcoin directories in /home/p2pool/ otherwise you will be giving away
 your secret keys! The image comes with those pre-deleted, and fresh wallets are created automatically the
 first time you boot the image.
-
 
