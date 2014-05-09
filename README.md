@@ -6,7 +6,8 @@ Download the latest image (supplied as a split zipfile in parts, you need all th
 
 NOTE: For release 0.1 initially a set of zips containing VirtualBox files was uploaded. I've now also added an OVA (Open Virtualisation Platform)
 image packed into split zips, so it's easy to import this into VirtualBox, VMWare, HyperV or most other virtualisation platforms. You don't need
-both sets of files, just one.
+both sets of files, just one. If you intend to use VirtualBox, it's probably better to download the native VirtualBox files, as I understand
+the port forwarding them works out-of-the-box with no need to reconfigure anything.
 
 NOTE2: Especially if using the OVA format (but possibly also with the VirtualBox files, I haven't tested it on a fresh machine) you may find your
 miner cannot connect (and you can't browse) to 127.0.0.1:9171 (p2pool). If this happens it's likely because the port forwarding set up when I
